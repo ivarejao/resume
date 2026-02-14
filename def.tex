@@ -19,6 +19,9 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{hyperref}
+
+\usepackage{multicol}
+
 \input{glyphtounicode}
 
 
@@ -69,6 +72,36 @@
   }
 }
 
+\newcommand{\education}[4]{ % title, location, instution, duration
+  \vspace{-2pt}
+  \item 
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\small #2} \\
+    #3 & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\industry}[5]{ % title, type, location, duration
+  \vspace{-2pt}
+  \item 
+  \textbf{#1} \\
+  \begin{tabular*}{0.97\textwidth}[t]{l}
+    \textit{\small#2} \\
+    \textit{\small#3} \\
+    \textit{\small#4} \\
+  \end{tabular*} \\
+  #5 \\
+}
+
+\newcommand{\research}[3]{
+  \vspace{-2pt}
+  \textbf{#1} \\
+  \begin{tabular*}{0.97\textwidth}[t]{l}
+    \textit{\small#2} \\
+    #3 \\
+  \end{tabular*} \\
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -93,9 +126,14 @@
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
+
+\newcommand{\liststart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\listend}{\end{itemize}\vspace{-5pt}}
+
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={+++}]}
+% \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
