@@ -7,13 +7,13 @@
 
 # Experience
 
-## Data Extraction Fellow
+## AI Engineer Fellow
 
 - Company: Ministério Público de Minas Gerais
 - Job: Fellowship
 - Period: August 2025 -- Present
 - Description:
-  - Created tools for extracting structured data from HTML sources.
+  - Engineered data processing pipelines to extract and parse complex HTML sources, generating structured datasets for downstream modeling;
   - Developed data ingestion workflows to load extracted data into PostgreSQL databases.
   - Currently developing a robust data extraction agent using LangChain to support multiple data formats and improve the flexibility and reliability of the extraction workflow.
 
@@ -121,3 +121,4 @@
   - Implemented Selenium to automate page navigation and extraction of web content.
   - Utilized BeautifulSoup to parse, clean, and structure the textual data for corpus construction.
   - Optimized the scraping and data processing workflow to ensure efficiency and timely completion of the project.
+

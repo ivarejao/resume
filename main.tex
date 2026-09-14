@@ -1,0 +1,129 @@
+\input{def}
+
+\newcommand{\columnindustry}[5]{
+  \vspace{-2pt}
+  \item
+  \textbullet\ \textbf{#1} \\
+  \textit{\small #2} \\
+  \textit{\small #3} \\
+  \textit{\small #4} \\
+  \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item #5
+  \end{itemize}
+}
+\newcommand{\columnresearch}[3]{
+  \vspace{-2pt}
+  \textbf{#1} \\
+  \textit{\small #2} \\
+  \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=0pt, parsep=0pt]
+    \item #3
+  \end{itemize}
+}
+
+\begin{document}
+\small
+\linespread{1.04}\selectfont
+
+%----------HEADING----------
+\begin{center}
+  {\LARGE \textbf{Igor Varejão}} \\
+  \textsc{Master Student Fellow} \\
+  \textsc{Computer Science Department - Universidade Federal de Minas Gerais - Brasil} \\
+  \href{mailto:igor.varejao.dev@gmail.com}{igor.varejao.dev@gmail.com}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\liststart
+\education
+  {Master of Science in Computer Science, Artificial Intelligence}
+  {Belo Horizonte, MG, Brazil}
+  {Federal University of Minas Gerais}
+  {August 2025 -- Present}
+  \vspace{-5pt}
+  \item \textit{Research focus: AI Music Generation and Music Information Retrieval (MIR)}
+\education
+  {Bachelor in Computer Science}
+  {Vitória, ES, Brazil}
+  {Federal University of Espírito Santo}
+  {March 2019 -- November 2024}
+\listend
+
+\begin{multicols}{2}
+
+%-----------INDUSTRY EXPERIENCE-----------
+\section{Industry Experience}
+\liststart
+\columnindustry
+  {AI Engineer Fellow}
+  {Ministério Público de Minas Gerais}
+  {Fellowship}
+  {August 2025 -- Present}
+  {Engineered data processing pipelines to extract and parse complex HTML sources, generating structured datasets for downstream modeling. Developed data ingestion workflows for PostgreSQL databases. Currently developing a robust LangChain data extraction agent supporting multiple formats.}
+\columnindustry
+  {Data Engineer at \href{https://olhododono.agr.br}{Olho Do Dono}}
+  {Full-time}
+  {Vitória, ES, Brazil}
+  {October 2024 -- May 2025}
+  {Created and maintained CI/CD pipelines, using Azure, Docker, and PostgreSQL to support infrastructure and data processing. Scaled cattle weight prediction systems and optimized computer vision workflows for production.}
+\columnindustry
+  {Data Engineer Intern at \href{https://olhododono.agr.br}{Olho Do Dono}}
+  {Internship}
+  {Vitória, ES, Brazil}
+  {July 2022 -- September 2024}
+  {Developed video-based cattle weight prediction systems in Python. Led image annotation, segmentation, tagging, and data ingestion workflows in CVAT, with rigorous quality checks. Conducted EDA with Jupyter, Briefer, and Plotly, and coordinated servers through ZMQ.}
+\listend
+
+%-----------TEACHING EXPERIENCE-----------
+\section{Teaching Experience}
+\columnresearch
+  {Teaching Assistant -- Supervised Machine Learning}
+  {Federal University of Minas Gerais, March 2026 -- June 2026}
+  {Supported instruction in KNN, linear and logistic regression, SVM, and decision trees; guided students implementing foundational models with NumPy and scikit-learn.}
+  \columnresearch
+  {Teaching Assistant -- Neural Networks and Deep Learning}
+  {Federal University of Minas Gerais, August 2025 -- December 2025}
+  {Supported instruction in neural network training, convolutional and recurrent networks; guided students through PyTorch implementations and deep learning best practices.}
+
+%-----------TECHNICAL EXPERTISE-----------
+\section{Technical Expertise}
+\begin{itemize}[leftmargin=0.15in, label=\textbullet, itemsep=0pt, topsep=1pt]
+  \item \textbf{Programming Languages:} Python, C, C++, Java, Haskell, Shell Script
+  \item \textbf{Machine Learning and Scientific Computing:} PyTorch, PyTorch Lightning, scikit-learn, NumPy, Pandas, OpenCV, LangChain
+  \item \textbf{Data and Visualization:} PostgreSQL, MySQL, Plotly, Jupyter, Briefer
+  \item \textbf{Infrastructure and Development:} Docker, Azure, AWS, Git, CI/CD, Linux, ZMQ, CVAT
+\end{itemize}
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+\columnresearch
+  {Artificial Intelligence Undergraduate Researcher}
+  {Federal University of Espírito Santo, August 2020 -- July 2024}
+  {Developed deep neural networks for defect pattern recognition in submersible centrifugal pumping systems in partnership with Petrobras. Processed vibration signals across time, frequency, and time-frequency domains; performed EDA and statistical testing; and developed the public VibData framework for centralized research datasets.}
+\vspace{10pt}
+  \columnresearch
+  {Artificial Intelligence Volunteer Researcher}
+  {Federal University of Espírito Santo, August 2024 -- December 2024}
+  {Developed transfer-learning models for rotary machinery fault diagnosis with the University of Ottawa. Built a benchmarking framework to evaluate pretrained models on centralized bearing datasets against state-of-the-art approaches.}
+
+%-----------SELECTED PUBLICATIONS-----------
+\renewcommand{\refname}{Selected Publications}
+\bibliographystyle{ieeetr}
+\nocite{VAREJAO2025112822,sehri2025universalvibrationanalysisdataset,LNLM2023-21022}
+\bibliography{references}
+
+%-----------HONORS AND AWARDS-----------
+% No honors or awards were provided. The AI Engineer Fellowship is listed under Industry Experience.
+
+\end{multicols}
+
+%-----------FURTHER INFORMATION-----------
+\section{Further Information}
+\begin{center}
+  \small
+  \textbullet\ \href{https://igorvarejao.tech}{igorvarejao.tech} \quad
+  \textbullet\ \href{https://www.linkedin.com/in/igor-varejao}{linkedin.com/in/igor-varejao} \quad
+  \textbullet\ \href{https://github.com/ivarejao}{github.com/ivarejao}
+\end{center}
+
+\end{document}
